@@ -6,6 +6,10 @@ input.onGesture(Gesture.EightG, function () {
         # # # # #
         # # # # #
         `)
+    music.play(music.tonePlayable(523, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    music.play(music.tonePlayable(440, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    music.play(music.tonePlayable(349, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    music.setVolume(127)
     basic.clearScreen()
 })
 bluetooth.onBluetoothConnected(function () {
